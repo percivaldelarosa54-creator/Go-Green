@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Go Green — Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="forest-bg">
+  <main class="card center">
+    <h1 class="brand">🌲 Go Green 🌲</h1>
+
+    <div id="auth-area">
+      <div class="tabs">
+        <button id="tab-login" class="active">Login</button>
+        <button id="tab-register">Register</button>
+      </div>
+
+      <form id="login-form" class="form">
+        <label>Email<input id="login-email" type="email" required /></label>
+        <label>Password<input id="login-pass" type="password" required /></label>
+        <div class="row">
+          <button type="submit" class="btn">Sign in</button>
+          <button id="demo-btn" type="button" class="btn ghost">Preview</button>
+        </div>
+      </form>
+
+      <form id="register-form" class="form hidden">
+        <label>Full name<input id="reg-name" type="text" required /></label>
+        <label>Email<input id="reg-email" type="email" required /></label>
+        <label>Password<input id="reg-pass" type="password" required /></label>
+        <div class="row">
+          <button type="submit" class="btn">Create account</button>
+        </div>
+      </form>
+      <p class="muted">This website stores credentials in your browser only (localStorage).</p>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

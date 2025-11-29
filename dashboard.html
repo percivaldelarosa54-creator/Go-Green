@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Go Green — Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="forest-bg">
+  <nav class="topbar">
+    <div class="brand">🌲 Go Green 🌲</div>
+    <div class="nav-actions">
+      <button id="to-reporting" class="btn ghost">Reporting Dashboard</button>
+      <button id="logout" class="btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Welcome, <span id="user-name">User</span></h2>
+      <p>This is your personal dashboard where you can view the number of your visits and sales.</p>
+
+      <div class="cards-grid">
+        <div class="small-card">
+          <h3 id="visits-count">—</h3>
+          <p>Visits</p>
+        </div>
+        <div class="small-card">
+          <h3 id="sales-count">—</h3>
+          <p>Sales</p>
+        </div>
+        <div class="small-card">
+          <h3 id="random-quote">“Let it grow.”</h3>
+          <p>Forest wisdom</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

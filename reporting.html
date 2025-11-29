@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Go Green — Reporting Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="forest-bg">
+  <nav class="topbar">
+    <div class="brand">🌲 Go Green 🌲</div>
+    <div class="nav-actions">
+      <button id="to-dashboard" class="btn ghost">My Dashboard</button>
+      <button id="logout" class="btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Reporting Dashboard</h2>
+      <p>Visitors and Sales — data is randomly generated each time this page loads.</p>
+
+      <div class="controls">
+        <label>Number of visitor rows:
+          <input id="row-count" type="number" value="12" min="3" max="200" />
+        </label>
+        <button id="regen" class="btn">Regenerate</button>
+      </div>
+
+      <div class="cards-grid">
+        <div class="big-card">
+          <h3>Visitors</h3>
+          <table id="visitors-table" class="report-table">
+            <thead><tr><th>#</th><th>Name</th><th>City</th><th>Visit Time</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="big-card">
+          <h3>Sales</h3>
+          <table id="sales-table" class="report-table">
+            <thead><tr><th>#</th><th>Order ID</th><th>Customer</th><th>Amount (₱)</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
